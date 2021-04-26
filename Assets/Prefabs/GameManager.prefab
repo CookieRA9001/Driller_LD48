@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5981904689231195917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5981904689231195918}
+  - component: {fileID: 5981904689231195919}
+  - component: {fileID: 3143796723750838560}
+  - component: {fileID: 4268266544421119107}
+  - component: {fileID: 1069361744}
+  - component: {fileID: 1069361745}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5981904689231195918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981904689231195917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5981904689231195919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981904689231195917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae671146ff424ea4fa34bec8e330cb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FloorPrefabs:
+  - {fileID: 2731492688673529406, guid: 3161e2e2c604516429a7bea8565c805d, type: 3}
+  - {fileID: 2731492688673529406, guid: 1ba346ffb45b4574f81d2fe1268a59c6, type: 3}
+  - {fileID: 2731492688673529406, guid: b244613421154304db5329f8849db22c, type: 3}
+  - {fileID: 2731492688673529406, guid: dc7db3323b57ecb4c8dad6f2110c8307, type: 3}
+  - {fileID: 2731492688673529406, guid: 07066d7fa35341d4a87ca9166d07cc93, type: 3}
+  - {fileID: 2731492688673529406, guid: 0865cf3b02aadc34aa2bba3b34d2f9a3, type: 3}
+  - {fileID: 2731492688673529406, guid: 48ee95202f43d14438db48d6fc391cb2, type: 3}
+  - {fileID: 2731492688673529406, guid: 50b9ce2f79e1b8c429a87ed4ee309b78, type: 3}
+  - {fileID: 2731492688673529406, guid: 76417078667fd484fb6f7291a36d4bdc, type: 3}
+  - {fileID: 2731492688673529406, guid: e92aca20f040da04b853acec6c424c63, type: 3}
+  ShopFloorPrefabs:
+  - {fileID: 2731492688673529406, guid: 5ad19e4387537724e8c12999bd17e1e1, type: 3}
+  - {fileID: 2731492688673529406, guid: c824aa7a5fca409468fe1ab3c0d337f6, type: 3}
+  - {fileID: 2731492688673529406, guid: 3c57bc3dc08ac0841a0ffbd226450543, type: 3}
+  EnemySpawnerPrefabs:
+  - {fileID: 8241700579576059825, guid: cbfdb944f944a5a4ea567bf0a15cd17d, type: 3}
+  - {fileID: 8241700579576059825, guid: 0b7f00b7259184f45951fc193ccea400, type: 3}
+  - {fileID: 8241700579576059825, guid: 525b9961816afb445bfa108c0a261736, type: 3}
+  - {fileID: 8241700579576059825, guid: 07cfffe94b7465c41b82527212589cf9, type: 3}
+  - {fileID: 410577002304373956, guid: 8bd2766f7dc79a9489816009050e8ec0, type: 3}
+  - {fileID: 8441815360818371191, guid: 6ce582c1dfbbf93459b5882ffeb445f5, type: 3}
+  - {fileID: 9116209011691093271, guid: 890f572ec894d824b9aa6c44a430b8e4, type: 3}
+  - {fileID: 4661968078505476606, guid: c85bf66dcf6f5d0459e82270c0a330f1, type: 3}
+  EnemySpawnChances: 0f000000280000002f000000400000004b0000005a0000006200000064000000
+  Floors: []
+  spawnPos: {x: 0, y: 0, z: 0}
+  floor: 0
+  lastSpawnedFloor: 0
+  oreChances: 9a020000b6030000cf030000e3030000e7030000e8030000
+  oreChancesMax: 4b00000096000000e10000002c010000f4010000e8030000
+  oreChancesRate:
+  - 1
+  - 0.75
+  - 0.25
+  - 0.15
+  - 0.05
+  - 1000
+  oreChancesMultiplier: 1
+  DarknessMin: 0.2
+  DarknessDiv: 500
+  shopFloor: 10
+--- !u!114 &3143796723750838560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981904689231195917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8728f59ac555b3d4cad6a2bd27f865f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Restart: {fileID: 0}
+  isCheckPoint: 0
+  isDeathMessage: 0
+--- !u!114 &4268266544421119107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981904689231195917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f810a03d0118744975877139379fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drillSpeedText: {fileID: 0}
+  moveSpeedText: {fileID: 0}
+  FortuneText: {fileID: 0}
+  OreAmountText: {fileID: 0}
+  DarknessText: {fileID: 0}
+  MaxHealthText: {fileID: 0}
+  HealthText: {fileID: 0}
+  UpgradedText: {fileID: 0}
+--- !u!114 &1069361744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981904689231195917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebd61cdc487ab1b4db1f1f44f8834fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  craftingMenu: {fileID: 0}
+  exitMenu: {fileID: 0}
+  craftingButton1: {fileID: 0}
+  craftingButton2: {fileID: 0}
+  eventSystem: {fileID: 0}
+  firstSelected: {fileID: 0}
+--- !u!114 &1069361745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981904689231195917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06b7331fb956604f8ecf51609e7b7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMenuManager: {fileID: 0}
+  CheckPointObjectRaf: {fileID: 2256260757331022189, guid: 7886cd209ebdfe941b34120c2cee1dec, type: 3}

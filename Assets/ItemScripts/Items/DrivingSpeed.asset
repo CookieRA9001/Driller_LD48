@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a334a51adc3794fadbd36b12e7a102, type: 3}
+  m_Name: DrivingSpeed
+  m_EditorClassIdentifier: 
+  OrePrice: 0200000002000000020000000000000000000000
+  priceIncrease: 1
+  increasePercent: 0
+  id: 5
+  itemImage: {fileID: 21300000, guid: 0b6a9a6ef48c42348b69f37d76f5c6b1, type: 3}
+  itemName: Driving Speed
+  itemDescription: Increases your movement speed
+  itemClass: {fileID: -5217748808369351777, guid: 7580fad5541887942b12d326da74e655, type: 3}
+  BasePrice: 0200000002000000020000000000000000000000
