@@ -60,6 +60,11 @@ public class SavingScript : MonoBehaviour
         playerStats.Health = PlayerPrefs.GetInt("Health");
         playerStats.MaxHealth = PlayerPrefs.GetInt("MaxHealth");
         playerStats.UpdateHealth();
+
+        if (PlayerPrefs.GetInt("Killall") == 1) {
+                gameManager.killAll = true;
+        } else gameManager.killAll = false;
+
         upgradeScript.UpdateTexts(-1);
 
         gameManager.SpawnCustomFromNew(PlayerPrefs.GetInt("FloorInType"), PlayerPrefs.GetInt("Floor"));
@@ -90,6 +95,10 @@ public class SavingScript : MonoBehaviour
             cp.FloorType = PlayerPrefs.GetInt("CheckpointFloorType");
             cp.flashlight = PlayerPrefs.GetFloat("CheckpointDarkness");
             cp.oCM = PlayerPrefs.GetFloat("CheckpointOreChance");
+
+            if (PlayerPrefs.GetInt("CheckpointKillall") == 1) {
+                cp.killall = true;
+            } else cp.killall = false;
 
             playerStats.isCheckPoint = true;
 
@@ -124,6 +133,10 @@ public class SavingScript : MonoBehaviour
         PlayerPrefs.SetInt("Health", playerStats.Health);
         PlayerPrefs.SetInt("MaxHealth", playerStats.MaxHealth);
 
+        if (gameManager.killAll) {
+                PlayerPrefs.SetInt("Killall", 1);
+        } else PlayerPrefs.SetInt("Killall", 0);
+
         if (playerStats.FloorIn != null) {
             PlayerPrefs.SetInt("FloorInType", playerStats.FloorIn.GetComponent<FloorParentScript>().floorScript.type);
         }
@@ -153,6 +166,10 @@ public class SavingScript : MonoBehaviour
             PlayerPrefs.SetInt("CheckpointFloorType", playerStats.chechPoint.FloorType);
             PlayerPrefs.SetFloat("CheckpointDarkness", playerStats.chechPoint.flashlight);
             PlayerPrefs.SetFloat("CheckpointOreChance", playerStats.chechPoint.oCM);
+
+            if (playerStats.chechPoint.killall) {
+                PlayerPrefs.SetInt("CheckpointKillall", 1);
+            } else PlayerPrefs.SetInt("CheckpointKillall", 0);
 
         } else {
             PlayerPrefs.SetInt("hasCheckPoint", -1);

@@ -25,6 +25,7 @@ public class ItemMenuManager : MonoBehaviour
     {
         PageCount = (int)Mathf.Ceil(Items.Length / 4f);
         pStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        if (PlayerPrefs.GetInt("Saved") != 1) ClearPrices();
         LoadItems();
         UpdateButtons();
         UpdateIDs();

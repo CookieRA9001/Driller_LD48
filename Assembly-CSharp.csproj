@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\enemies\EnemyAbil_FireBall.cs" />
     <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Misc\UnlockEndless.cs" />
     <Compile Include="Assets\Scripts\GameManager\UpgradeScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\UpgadeLogic.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\ShopLogic.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
+    <Compile Include="Assets\ItemScripts\ItemFunctions\KillSteel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\enemies\DamageTrigger.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -129,9 +131,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\enemies\EnemySpriteGroup.cs" />
     <Compile Include="Assets\Scripts\PortalLogic.cs" />
+    <Compile Include="Assets\Scripts\Misc\ClearSave.cs" />
     <Compile Include="Assets\Scripts\HartCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Scripts\Crafting\CraftMenuButtonScript.cs" />
     <Compile Include="Assets\ItemScripts\ItemFunctions\Template.cs" />
     <Compile Include="Assets\Scripts\Crafting\OpenMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
@@ -143,10 +147,6 @@
     <Compile Include="Assets\ItemScripts\ItemFunctions\MoreHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\ItemScripts\ItemProperty.cs" />
-    <Compile Include="Assets\ItemScripts\ItemFunctions\KillSteel.cs" />
-    <Compile Include="Assets\Scripts\Crafting\CraftMenuButtonScript.cs" />
-    <Compile Include="Assets\Scripts\Misc\UnlockEndless.cs" />
-    <Compile Include="Assets\Scripts\Misc\ClearSave.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

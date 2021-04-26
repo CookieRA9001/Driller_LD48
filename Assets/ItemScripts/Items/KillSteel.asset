@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a334a51adc3794fadbd36b12e7a102, type: 3}
   m_Name: KillSteel
   m_EditorClassIdentifier: 
-  OrePrice: 10270000102700001027000010270000d0070000
+  OrePrice: 0a0000000a0000000a0000000a00000002000000
   priceIncrease: 1000
   increasePercent: 1
   id: 13
