@@ -8,8 +8,12 @@ public class KillSteel : Item{
         GM.killAll = true;
         UpgradeScript uScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<UpgradeScript>();
         uScript.DisplayUpgrade("Your drill rowers with POWER!\nYou can drill steel enemies!");
-        EnemySpriteGroup[] allPortal = FindObjectsOfType<EnemySpriteGroup>();
-        foreach (EnemySpriteGroup e in allPortal)
+        //GameObject[] list = GameObject.FindGameObjectsWithTag("Enemy");
+        //for (int i = 0; i < list.Length; i++) {
+        //    list[i].GetComponent<EnemySpriteGroup>().canDie = true;
+        //}
+        EnemyStats[] allPortal = FindObjectsOfType<EnemyStats>();
+        foreach (EnemyStats e in allPortal)
         {
             e.canDie = true;
         }
